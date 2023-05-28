@@ -325,6 +325,6 @@ html{
 
 @media(max-width:300px){
     html{
-        font-size: 30%;
+        font-size: 20%;
     }
 }

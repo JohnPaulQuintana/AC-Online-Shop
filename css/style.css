@@ -323,7 +323,7 @@ html{
     }
 }
 
-@media(max-width:300px){
+@media(max-width:250px){
     html{
         font-size: 20%;
     }

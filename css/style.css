@@ -302,6 +302,7 @@ html{
     text-transform: none;
 }
 
+
 .footer .box-container .box .payment{
     width: 100%;
     margin-top: 2rem;
@@ -437,18 +438,160 @@ section{
     padding: .8rem 2.5rem;
 }
 
+/* shop */
+.heading{
+    background: url('../image/banner-1.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 12rem;
+    padding-bottom: 8rem; 
+}
+.heading h1{
+    color: var(--black);
+    font-size: 4rem;
+}
+.heading p{
+    padding-top: 1 rem;
+    font-size: 2rem;
+    color: var(--black);
+    font-weight: 700;
+}
+.heading p a{
+    color: var(--white);
+    padding-right: .5rem;
+}
+.heading p a:hover{
+    color: var(--green);
+}
 
+.title{
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    padding: 1.2rem 0;
+    border-bottom: var(--border);
+    color: var(--black   );
+}
+.title span{
+    color: var(--green);
+    padding-left: .7rem;
+}
+.title a{
+    margin-left: auto;
+    color: var(--light-color);
+    font-size: 1.5rem;
+}
+.title a:hover{
+    color: var(--green);
+}
 
+.category .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 8rem;
+    /* border: var(--black); */
+    padding: 4rem 0;
+}
 
+.category .box-container .box{
+    text-align: center;
+}
 
+.category .box-container .box img{
+    height: 15rem;
+}
 
+.category .box-container .box h3{
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: var(--light-color);
+}
+.category .box-container .box h3:hover{
+    color: var(--green);
+}
 
+/* products */
+.products .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    /* padding: 4rem 0; */
+}
+.products .box-container .box img{
+    height: 30rem;
+}
 
+.products .box-container .box{
+    position: relative;
+    background: var(--light-bg);
+    text-align: center;
+    overflow: hidden;
+}
 
+.products .box-container .box:hover .icons{
+    top: 0;
+}
 
+.products .box-container .box .icons{
+    position: absolute;
+    top: -107%;left: 0;
+    height: 30rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(243,243,243,.8);
+    gap: 1rem;
+}
 
+.products .box-container .box .icons a{
+    font-size: 2rem;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+    color: var(--light-color);
+}
 
+.products .box-container .box .icons a:hover{
+    background: var(--green);
+    color: var(--white);
+}
 
+.products .box-container .box .image{
+    height: 30rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.products .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.products .box-container .box .content{
+    padding: 1.5rem;
+}
+
+.products .box-container .box .content h3{
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.products .box-container .box .content .price{
+    font-size: 2rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
+
+.products .box-container .box .content .stars i{
+    font-size: 1.7rem;
+    color: var(--green);
+}
 
 
 

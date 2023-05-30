@@ -669,8 +669,9 @@ section{
 }
 
 .products .box-container .box .content .stars i{
-    font-size: 1.7rem;
+    font-size: 2.5rem;
     color: var(--yellow);
+    /* box-shadow: var(--box-shadow); */
 }
 
 

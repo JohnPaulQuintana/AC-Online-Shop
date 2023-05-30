@@ -4,6 +4,7 @@
     --green:#4baadd;
     --black:#222;
     --white:#fff;
+    --sale:rgb(101, 3, 3);
     --light-color:#666;
     --light-bg:#f3f3f3;
     --border:.1rem solid rgba(0,0,0,.1);
@@ -397,6 +398,13 @@ section{
         opacity: 0;
     }
 }
+/* sales color */
+#sales{
+    color: var(--sale);
+    font-size: 9rem;
+}
+
+
 .home{
     padding-top: 14rem;
     background: url('../image/background-home.jpg') no-repeat;
@@ -420,7 +428,7 @@ section{
 .home .slides-container .slide .content span{
     color: var(--white);
     font-size: 2.5rem;
-    text-shadow: var(--text-shadow);
+    /* text-shadow: var(--text-shadow); */
 }
 .home .slides-container .slide .content h3{
     font-size: 6rem;
@@ -556,7 +564,7 @@ section{
 .category .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-    gap: 8rem;
+    gap: 9rem;
     /* border: var(--black); */
     padding: 4rem 0;
 }
@@ -567,6 +575,12 @@ section{
 
 .category .box-container .box img{
     height: 15rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.category .box-container .box img:hover{
+    transform: scale(1.2);
+    
 }
 
 .category .box-container .box h3{

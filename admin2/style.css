@@ -524,7 +524,11 @@ body {
 /* MAIN */
 /* CONTENT */
 
+/* hide section */
 
+.home, .shop{
+	display: none;
+}
 
 
 

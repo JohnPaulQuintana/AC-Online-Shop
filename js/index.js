@@ -87,23 +87,31 @@ const elementsToRemoveActiveClass = [searchForm, cart, registerForm, navbar];
     
     let slides = document.querySelectorAll('.home .slides-container .slide')
     let index = 0
+    let autoAdvanceTimer;
     function next(){
         clearInterval(autoAdvanceTimer); // Clear the auto advance timer
         slides[index].classList.remove('active')
         index = (index + 1) % slides.length
         slides[index].classList.add('active')
+        startAutoAdvance(); // Restart auto advancing
     }
     function prev(){
         clearInterval(autoAdvanceTimer); // Clear the auto advance timer
         slides[index].classList.remove('active')
         index = (index - 1 + slides.length) % slides.length
         slides[index].classList.add('active')
+        startAutoAdvance(); // Restart auto advancing
     }
     function autoAdvance() {
         slides[index].classList.remove('active');
         index = (index + 1) % slides.length;
         slides[index].classList.add('active');
     }
+
+    function startAutoAdvance() {
+        clearInterval(autoAdvanceTimer); // Clear any existing interval
+        autoAdvanceTimer = setInterval(autoAdvance, 5000); // Start new interval
+    }
     
     // Start auto advancing every 5 seconds
-    autoAdvanceTimer = setInterval(autoAdvance, 5000);
+        startAutoAdvance(); // Start initial auto advancing

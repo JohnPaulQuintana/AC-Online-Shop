@@ -9,12 +9,7 @@
     --light-bg:#f3f3f3;
     --border:.1rem solid rgba(0,0,0,.1);
     --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
-    --text-shadow:
-    1px 1px 0 #4baadd,
-    2px 2px 0 #4baadd,
-    3px 3px 0 #4baadd,
-    4px 4px 0 #4baadd,
-    5px 5px 0 #4baadd;
+    --yellow:rgb(214, 214, 6);
 }
 *{
     font-family: 'Poppins', sans-serif;
@@ -401,7 +396,12 @@ section{
 /* sales color */
 #sales{
     color: var(--sale);
-    font-size: 9rem;
+    font-size: 7rem;
+}
+
+#sales-sm{
+    color: var(--sale);
+    font-size: 2.5rem;
 }
 
 
@@ -670,7 +670,7 @@ section{
 
 .products .box-container .box .content .stars i{
     font-size: 1.7rem;
-    color: var(--green);
+    color: var(--yellow);
 }
 
 

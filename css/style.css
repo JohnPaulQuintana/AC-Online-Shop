@@ -8,6 +8,12 @@
     --light-bg:#f3f3f3;
     --border:.1rem solid rgba(0,0,0,.1);
     --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --text-shadow:
+    1px 1px 0 #4baadd,
+    2px 2px 0 #4baadd,
+    3px 3px 0 #4baadd,
+    4px 4px 0 #4baadd,
+    5px 5px 0 #4baadd;
 }
 *{
     font-family: 'Poppins', sans-serif;
@@ -250,6 +256,65 @@ html{
     }
 }
 
+/* registration */
+.header .registration-form{
+    position: absolute;
+    top: 115%;right: -105%;
+    background: var(--white);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    width: 35rem;
+    padding: 2rem;
+
+}
+.header .registration-form.active{
+    right: 2rem;
+    transition: .4s linear;
+}
+.header .registration-form h3{
+    color: var(--black);
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: .7rem;
+}
+.header .registration-form .box{
+    margin: .7rem 0;
+    border: var(--border);
+    padding: 1rem 1.2rem;
+    font-size: 1.5rem;
+    color: var(--black);
+    text-transform: none;
+    width: 100%;
+}
+.header .registration-form .remember{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin: .7rem 0;
+}
+.header .registration-form .remember label{
+    font-size: 1.5rem;
+    color: var(--light-color);
+    cursor: pointer;
+}
+.header .registration-form .btn{
+    margin: 1rem 0;
+    width: 100%;
+    text-align: center;
+}
+.header .registration-form p{
+    color: var(--light-color);
+    padding-top: .7rem;
+    font-size: 1.4rem;
+}
+.header .registration-form p a{
+    color: var(--green);
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
 
 /* .space{
     min-height: 30vh;
@@ -334,7 +399,7 @@ section{
 }
 .home{
     padding-top: 14rem;
-    background: url() no-repeat;
+    background: url('../image/background-home.jpg') no-repeat;
     background-size: cover;
     position: relative;
 }
@@ -353,8 +418,9 @@ section{
     animation: fadeLeft .4s linear .4s backwards;
 }
 .home .slides-container .slide .content span{
-    color: var(--light-color);
+    color: var(--white);
     font-size: 2.5rem;
+    text-shadow: var(--text-shadow);
 }
 .home .slides-container .slide .content h3{
     font-size: 6rem;
